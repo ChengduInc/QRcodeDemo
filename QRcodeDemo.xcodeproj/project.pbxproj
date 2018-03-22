@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		18D53D932063AE5200C98C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53D922063AE5200C98C15 /* AppDelegate.swift */; };
-		18D53D952063AE5200C98C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53D942063AE5200C98C15 /* ViewController.swift */; };
 		18D53D982063AE5200C98C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D53D962063AE5200C98C15 /* Main.storyboard */; };
 		18D53D9A2063AE5200C98C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D53D992063AE5200C98C15 /* Assets.xcassets */; };
 		18D53D9D2063AE5200C98C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D53D9B2063AE5200C98C15 /* LaunchScreen.storyboard */; };
 		18D53DA82063AE5200C98C15 /* QRcodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DA72063AE5200C98C15 /* QRcodeDemoTests.swift */; };
 		18D53DB32063AE5200C98C15 /* QRcodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DB22063AE5200C98C15 /* QRcodeDemoUITests.swift */; };
+		18D53DCE2063F41B00C98C15 /* CreateQRcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DCD2063F41B00C98C15 /* CreateQRcodeController.swift */; };
+		18D53DD02063F43000C98C15 /* ExtractQRcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DCF2063F43000C98C15 /* ExtractQRcodeController.swift */; };
+		18D53DD22063F44100C98C15 /* ScanQRcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DD12063F44100C98C15 /* ScanQRcodeController.swift */; };
+		18D53DD42063F49E00C98C15 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53DD32063F49E00C98C15 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		18D53D8F2063AE5200C98C15 /* QRcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRcodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D53D922063AE5200C98C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D53D942063AE5200C98C15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18D53D972063AE5200C98C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D53D992063AE5200C98C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D53D9C2063AE5200C98C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		18D53DAE2063AE5200C98C15 /* QRcodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D53DB22063AE5200C98C15 /* QRcodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeDemoUITests.swift; sourceTree = "<group>"; };
 		18D53DB42063AE5200C98C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D53DCD2063F41B00C98C15 /* CreateQRcodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQRcodeController.swift; sourceTree = "<group>"; };
+		18D53DCF2063F43000C98C15 /* ExtractQRcodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractQRcodeController.swift; sourceTree = "<group>"; };
+		18D53DD12063F44100C98C15 /* ScanQRcodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRcodeController.swift; sourceTree = "<group>"; };
+		18D53DD32063F49E00C98C15 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,12 @@
 		18D53D912063AE5200C98C15 /* QRcodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18D53DC32063F31F00C98C15 /* CreateQRcode */,
+				18D53DC22063F31C00C98C15 /* ExtractQRcode */,
+				18D53DC12063F31A00C98C15 /* ScanQRcode */,
+				18D53DC02063F31800C98C15 /* Other */,
+				18D53DD32063F49E00C98C15 /* MainController.swift */,
 				18D53D922063AE5200C98C15 /* AppDelegate.swift */,
-				18D53D942063AE5200C98C15 /* ViewController.swift */,
 				18D53D962063AE5200C98C15 /* Main.storyboard */,
 				18D53D992063AE5200C98C15 /* Assets.xcassets */,
 				18D53D9B2063AE5200C98C15 /* LaunchScreen.storyboard */,
@@ -123,6 +133,109 @@
 				18D53DB42063AE5200C98C15 /* Info.plist */,
 			);
 			path = QRcodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		18D53DC02063F31800C98C15 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18D53DC12063F31A00C98C15 /* ScanQRcode */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DCC2063F3DC00C98C15 /* Models */,
+				18D53DCB2063F3DA00C98C15 /* Views */,
+				18D53DCA2063F3D800C98C15 /* Controllers */,
+			);
+			path = ScanQRcode;
+			sourceTree = "<group>";
+		};
+		18D53DC22063F31C00C98C15 /* ExtractQRcode */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DC92063F3C800C98C15 /* Models */,
+				18D53DC82063F3C600C98C15 /* Views */,
+				18D53DC72063F3C400C98C15 /* Controllers */,
+			);
+			path = ExtractQRcode;
+			sourceTree = "<group>";
+		};
+		18D53DC32063F31F00C98C15 /* CreateQRcode */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DC62063F3A100C98C15 /* Models */,
+				18D53DC52063F39F00C98C15 /* Views */,
+				18D53DC42063F39C00C98C15 /* Controllers */,
+			);
+			path = CreateQRcode;
+			sourceTree = "<group>";
+		};
+		18D53DC42063F39C00C98C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DCD2063F41B00C98C15 /* CreateQRcodeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18D53DC52063F39F00C98C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18D53DC62063F3A100C98C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18D53DC72063F3C400C98C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DCF2063F43000C98C15 /* ExtractQRcodeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18D53DC82063F3C600C98C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18D53DC92063F3C800C98C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18D53DCA2063F3D800C98C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D53DD12063F44100C98C15 /* ScanQRcodeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18D53DCB2063F3DA00C98C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18D53DCC2063F3DC00C98C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D53D952063AE5200C98C15 /* ViewController.swift in Sources */,
+				18D53DD22063F44100C98C15 /* ScanQRcodeController.swift in Sources */,
 				18D53D932063AE5200C98C15 /* AppDelegate.swift in Sources */,
+				18D53DCE2063F41B00C98C15 /* CreateQRcodeController.swift in Sources */,
+				18D53DD02063F43000C98C15 /* ExtractQRcodeController.swift in Sources */,
+				18D53DD42063F49E00C98C15 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
