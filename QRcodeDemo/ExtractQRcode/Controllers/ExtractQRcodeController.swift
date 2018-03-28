@@ -10,26 +10,31 @@ import UIKit
 
 class ExtractQRcodeController: UIViewController {
 
+     // MARK : IBOutlet控件
+    @IBOutlet weak var sourceImaeh: UIImageView!
+    
+    // MARK : 系统回调
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func ExtractQRcodeButton(_ sender: Any) {
+        
+        extractQRcode()
+        
     }
+
+}
+
+extension ExtractQRcodeController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // 识别图片二维码方法
+    fileprivate func extractQRcode() {
+        // 1. 获取需要识别的二维码
+        // 2. 开始识别
+        // 2.1 创建一个二维码探测器
+        // 2.2 直接探测二维码
+        
     }
-    */
-
 }
